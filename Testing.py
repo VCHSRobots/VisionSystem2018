@@ -17,7 +17,7 @@ print("> Welcome to the VisionSystem object creator.")
 print("> First things first: What would you like this object to be named?")
 ObjectName = input()
 #Log("Object name saved.")
-print("> Now you will need to draw an outline around the object, by clicking on each vertice, in order. (Clockwise or counterclockwise.))
+print("> Now you will need to draw an outline around the object, by clicking on each vertice, in order. (Clockwise or counterclockwise.)")
 print("> Press enter to save the outline, press delete to remove the last point, and press escape to exit the outliner window.")
 print("> IMPORTANT: Your image of the object must be taken in a \"neutral\" pose: with proper lighting, and at 0° rotation in all three planes; facing the camera.")
 input("> Press enter to continue...")
@@ -41,7 +41,7 @@ while True:
         print("> Are you sure this is the outline you want to use to create the object? Type \"Y\" to continue; type \"N\" to return to the outliner.")
         Input = input()
         if Input.upper() == "Y":
-            Log("Saved object outline.") # TODO: Actually save the outline. Extract key features (Color Min/Max, etc)
+#            Log("Saved object outline.") # TODO: Actually save the outline. Extract key features (Color Min/Max, etc)
             break
         else:
             print("> Returning to outliner window.")
@@ -56,7 +56,7 @@ cv2.destroyAllWindows()
 
 print("> One more thing... How far away, in inches, was the object in the image from the camera?")
 Distance = input()
-print("> OK. Now that we've finished describing the object, would you like to view a fancy 3D graphic it? (Y/N)")
+print("> OK. Now that we've finished describing the object, would you like to view a fancy 3D graphic of it? (Y/N)")
 Input = input()
 if Input.upper() == "Y":
     print("> Not implemented yet.") # TODO: Implement this!
