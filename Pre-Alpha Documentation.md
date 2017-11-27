@@ -52,6 +52,18 @@ Variables should be in "CamelCase" style.
   - Line lengths will not be limited 80 characters.
 [PEP 257](https://www.python.org/dev/peps/pep-0257/) will be followed for documentation style.
 
+### POTENTIAL METHODS OF OBJECT DETECTION (FILTERS):
+
+  - Object color (Two hex values representing the minimum and maximum expected color of the object.)
+  - Number of sides
+  - Sum of interior angles
+  - Solidity (Area of object as related to area of minimum enclosing circle.)
+  - Average central distance (The average distance of every moment in the object to the center of the min-enclosing circle)
+  - [This](https://en.wikipedia.org/wiki/Generalised_Hough_transform) and [this](https://en.wikipedia.org/wiki/Invariant_(physics)) look useful.
+  - [This](https://en.wikipedia.org/wiki/Convolutional_neural_network) and [this](https://www.tensorflow.org/) might be of use.
+    - Pros: Jetson is designed for neural networks and machine learning.
+    - Cons: Might be too slow for real-time use; creating training data could be difficult and time-consuming.
+
 ## Final notes:
 Information listed in this document will **almost certainly** be deprecated by future documentation.  
 Be aware that anything stated here may be inaccurate, or just plain wrong!

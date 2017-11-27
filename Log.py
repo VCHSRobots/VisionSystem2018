@@ -14,7 +14,7 @@ def Log(Message = None, LogLevel = 0):
     if Message == None:
         raise ValueError("Message has no value.")
         return
-    Time = time.strftime("%Y-%m-%d %H:%M%S")
+    Time = time.strftime("%Y-%m-%d %H:%M:%S")
     if type(Message) is str:
         LogLevel = str(LogLevel).upper()
         if LogLevel in ("0", "INFO"):
