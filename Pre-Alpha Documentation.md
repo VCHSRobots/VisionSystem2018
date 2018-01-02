@@ -37,7 +37,7 @@ Second task: Create a new and improved vision system.
 
   - `ObjectDetector.py` will find all specified objects in a given image frame.
 
-  - `Settings.cfg` will store program settings.
+  - `VS.cfg` will store program settings.
 
   - `Objects/` will store all object files for the program.
 
@@ -45,8 +45,9 @@ Second task: Create a new and improved vision system.
 
 ### STYLE INFORMATION:
 
-Consistency is the most important part of style!  
-Variables should be in "CamelCase" style.
+ - Consistency is the most important part of style!
+ - `.format()` will be used for strings with more than one variable. Otherwise, concatenation using `+` is fine.
+ - Variables should be in "CamelCase" style.
 [PEP 8](https://www.python.org/dev/peps/pep-0008/) will be followed for general Python programming style. Exceptions include:
   - Four spaces will be used for indentation.
   - Line lengths will not be limited 80 characters.
@@ -57,7 +58,7 @@ Variables should be in "CamelCase" style.
   - Object color (Two hex values representing the minimum and maximum expected color of the object.)
   - Number of sides
   - Sum of interior angles
-  - Solidity (Area of object as related to area of minimum enclosing circle.)
+  - Extent (Area of object divided by the area of the the minimum-sized rotated bounding box.)
   - Average central distance (The average distance of every moment in the object to the center of the min-enclosing circle)
   - [This](https://en.wikipedia.org/wiki/Generalised_Hough_transform) and [this](https://en.wikipedia.org/wiki/Invariant_(physics)) look useful.
   - [This](https://en.wikipedia.org/wiki/Convolutional_neural_network) and [this](https://www.tensorflow.org/) might be of use.
